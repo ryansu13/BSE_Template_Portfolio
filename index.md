@@ -9,7 +9,7 @@ A light that imitates nature. The chameleon light take the greatest RGB value of
 ![Headstone Image](logo.svg)
 
 FINAL MILESTONE
-My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box. I also wanted to increase the amount of colors that could be displayed in the code. Before that, I added yellow to the color portfolio and built the 3D shell for the circuits. My biggest challenge was getting the code to work because there were so many aspects that had to be solved. My greatest accomplishment was getting the code to work, because it was such a lon3g and challenging process. I learned a lot about the internals of wiring and Arduino's. I hope to learn about how the color sensor works and the code behind it. 
+My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box, along with my modifications. I also wanted to increase the amount of colors that could be displayed in the code. Before that, I added yellow to the color portfolio and built the 3D shell for the circuits. My biggest challenge was getting the code to work because there were so many aspects that had to be solved. My greatest accomplishment was getting the code to work, because it was such a long and challenging process. I learned a lot about the internals of wiring and Arduino's. I hope to learn about how the color sensor works and the code behind it. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -24,7 +24,6 @@ My final milestone was to get the wires and breadboards so that they could fit n
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 I got the 3D print to work, which was a crucial part of my goal, to ensure that the lighting system wouldn't get damaged. I was surprised when the it was hard to move the 3D print axes and I tried a five yellow bulbs and they all didn't work. I got both of these issues to work in the end, though. Now I just need to combine them for my final milestone. 
 
 # First Milestone
@@ -33,11 +32,7 @@ I got the 3D print to work, which was a crucial part of my goal, to ensure that 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+The breadboard will connect the LEDs and the color sensors, which will be supplied with power from an Arduino Uno. So far I have gotten the code to work, which is: if an object is held to the sensor, it takes the greatest RGB value and the corresponding light turns on. I will add more lights, which makes it more difficult and will 3D print a casing. My plan is to finish the software, then move onto a 3D print, and assembling everything. 
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
