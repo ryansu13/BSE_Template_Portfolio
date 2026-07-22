@@ -9,13 +9,10 @@ A light that imitates nature. The chameleon light take the greatest RGB value of
 ![Headstone Image](logo.svg)
   
 FINAL MILESTONE
-My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box. 
+My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box. I also wanted to increase the amount of colors that could be displayed in the code. Before that, I added yellow to the color portfolio and built the 3D shell for the circuits. My biggest challenge was getting the code to work because there were so many aspects that had to be solved. My greatest accomplishment was getting the code to work, because it was such a long and challenging process. I learned a lot about the internals of wiring and Arduino's. I hope to learn about how the 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE
 
@@ -52,14 +49,147 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
+#include <Adafruit_NeoPixel.h>  
+#ifdef __AVR__  
+#include <avr/power.h>  
+#endif  
+   
+#define PIN      9  
+   
+#define NUMPIXELS 5  
+   
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);  
+   
+int delayval = 333; // delay  
+ 
+#define S0 4
+#define S1 5
+#define S2 6
+#define S3 7
+#define sensorOut 8
+ 
+int frequency = 0;
+int Red, Green, Blue;
 
+int redFreq, yellowFreq, greenFreq, blueFreq; 
+
+int redPin = 13; 
+int yellowPin = 10; 
+int greenPin = 11; 
+int bluePin = 2; 
+int currentPin; 
+int rightPin; 
+
+void setup() {
+  pinMode(S0, OUTPUT);
+  pinMode(S1, OUTPUT);
+  pinMode(S2, OUTPUT);
+  pinMode(S3, OUTPUT);
+  pinMode(sensorOut, INPUT);
+  pinMode(redPin, OUTPUT); 
+  pinMode(yellowPin, OUTPUT); 
+  pinMode(greenPin, OUTPUT); 
+  pinMode(bluePin, OUTPUT); 
+ 
+  digitalWrite(S0,HIGH);
+  digitalWrite(S1,LOW);
+ 
+  Serial.begin(9600);
+  pixels.begin(); 
+}
+ 
 void loop() {
-  // put your main code here, to run repeatedly:
+  digitalWrite(S2,LOW);
+  digitalWrite(S3,LOW);
+  frequency = pulseIn(sensorOut, LOW);
+  frequency = map(frequency, 25,72,255,0);
+  if (frequency < 0) {
+    frequency = 0;
+  }
+  if (frequency > 255) {
+    frequency = 255;
+  }
+  Red= frequency;
+  redFreq = Red; 
+  Serial.print("R= ");
+  Serial.print(Red);
+  Serial.print("  ");
+  delay(100);
+ 
+  digitalWrite(S2,HIGH);
+  digitalWrite(S3,HIGH);
+  frequency = pulseIn(sensorOut, LOW);
+  frequency = map(frequency, 30,90,255,0);
+  if (frequency < 0) {
+    frequency = 0;
+  }
+  if (frequency > 255) {
+    frequency = 255;
+  }
+  Green = frequency;
+  greenFreq = Green; 
+  Serial.print("G= ");
+  Serial.print(Green);
+  Serial.print("  ");
+  delay(100);
+ 
+
+  digitalWrite(S2,LOW);
+  digitalWrite(S3,HIGH);
+  frequency = pulseIn(sensorOut, LOW);
+  frequency = map(frequency, 25,70,255,0);
+  if (frequency < 0) {
+    frequency = 0;
+  }
+  if (frequency > 255) {
+    frequency = 255;
+  }
+  Blue = frequency;
+  blueFreq = Blue; 
+  Serial.print("B= ");
+  Serial.print(Blue);
+  Serial.println("  ");
+  pixels.setPixelColor(0, pixels.Color(Red,Green,Blue)); 
+  pixels.setBrightness(64);  
+  pixels.show();
+  delay(100);
+
+  if (redFreq > 120 && greenFreq < 70 && blueFreq < 70){
+    rightPin = redPin; 
+    digitalWrite(yellowPin, LOW);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, LOW);
+    digitalWrite(redPin, HIGH); 
+  }
+  else if (redFreq > 90 && greenFreq > 90 && blueFreq < 70){
+    rightPin = yellowPin; 
+    digitalWrite(redPin, LOW); 
+    digitalWrite(bluePin, LOW); 
+    digitalWrite(greenPin, LOW); 
+    digitalWrite(yellowPin, HIGH);
+  }
+  else if (greenFreq > 70 && redFreq < 70 && blueFreq < 70){
+    rightPin = greenPin; 
+    digitalWrite(redPin, LOW); 
+    digitalWrite(yellowPin, LOW); 
+    digitalWrite(bluePin, LOW); 
+    digitalWrite(greenPin, HIGH);
+  }
+  else if (blueFreq > 70 && greenFreq < 70 && redFreq < 70){
+    rightPin = redPin; 
+    digitalWrite(redPin, LOW); 
+    digitalWrite(yellowPin, LOW);
+    digitalWrite(greenPin, LOW);
+    digitalWrite(bluePin, HIGH); 
+  }
+
+  if(currentPin != rightPin){
+    digitalWrite(currentPin, LOW); 
+    currentPin = rightPin; 
+    digitalWrite(rightPin, HIGH);
+  }
+
+  currentPin = rightPin; 
 
 }
 ```
