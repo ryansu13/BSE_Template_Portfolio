@@ -9,12 +9,12 @@ A light that imitates nature. The chameleon light take the greatest RGB value of
 ![Headstone Image](logo.svg)
 
 FINAL MILESTONE
-My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box. I also wanted to increase the amount of colors that could be displayed in the code. Before that, I added yellow to the color portfolio and built the 3D shell for the circuits. My biggest challenge was getting the code to work because there were so many aspects that had to be solved. My greatest accomplishment was getting the code to work, because it was such a long and challenging process. I learned a lot about the internals of wiring and Arduino's. I hope to learn about how the color sensor 
+My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box. I also wanted to increase the amount of colors that could be displayed in the code. Before that, I added yellow to the color portfolio and built the 3D shell for the circuits. My biggest challenge was getting the code to work because there were so many aspects that had to be solved. My greatest accomplishment was getting the code to work, because it was such a lon3g and challenging process. I learned a lot about the internals of wiring and Arduino's. I hope to learn about how the color sensor works and the code behind it. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- I learned how to code in Arduino-code and learned how to wire up LEDS.
+- I hope to learn about the insides of the Arduino Uno and the software code. 
 
 
 
@@ -25,10 +25,7 @@ My final milestone was to get the wires and breadboards so that they could fit n
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+I got the 3D print to work, which was a crucial part of my goal, to ensure that the lighting system wouldn't get damaged. I was surprised when the it was hard to move the 3D print axes and I tried a five yellow bulbs and they all didn't work. I got both of these issues to work in the end, though. Now I just need to combine them for my final milestone. 
 
 # First Milestone
 
@@ -202,3 +199,5 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Arduino UNO | It acts like the motherboard to my project | $5 | <a href="https://store-usa.arduino.cc/collections/uno"> Link </a> |
 | Color Sensor | Sensing color | $9 | <a href="https://www.amazon.com/arduino-color-sensor/s?k=arduino+color+sensor"> Link </a> |
 | RGB LED | Shows color | $5 | <a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/4203/10130502"> Link </a> |
+| Breadboard | It connects the bulbs.  | $3 | <a href="https://www.walmart.com/ip/Solderless-Breadboard-400-Tie-Points-2-Power-Rails-3-3-x-2-1-x-0-3-Inches/742836011?wmlspartner=wlpa&selectedSellerId=594&veh=seo_fpl&cn=google"> Link </a> |
+| Jumper wires | Connects everything.  | $4 | <a href="https://www.walmart.com/ip/Jumper-Wire-Cable-3-X-40-Pcs-Each-20-Cm-Dupont-Breadboard-Cables-In-1-Male-To-Female-Male-Female-For-Arduino-Raspberry-Pi/15611404788?wmlspartner=wlpa&selectedSellerId=101622314"> Link </a> |
