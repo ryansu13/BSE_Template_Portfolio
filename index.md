@@ -7,9 +7,9 @@ A light that imitates nature. The chameleon light take the greatest RGB value of
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](logo.svg)
-  
+
 FINAL MILESTONE
-My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box. I also wanted to increase the amount of colors that could be displayed in the code. Before that, I added yellow to the color portfolio and built the 3D shell for the circuits. My biggest challenge was getting the code to work because there were so many aspects that had to be solved. My greatest accomplishment was getting the code to work, because it was such a long and challenging process. I learned a lot about the internals of wiring and Arduino's. I hope to learn about how the 
+My final milestone was to get the wires and breadboards so that they could fit nicely in the 3d printed box. I also wanted to increase the amount of colors that could be displayed in the code. Before that, I added yellow to the color portfolio and built the 3D shell for the circuits. My biggest challenge was getting the code to work because there were so many aspects that had to be solved. My greatest accomplishment was getting the code to work, because it was such a long and challenging process. I learned a lot about the internals of wiring and Arduino's. I hope to learn about how the color sensor 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
