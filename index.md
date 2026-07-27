@@ -35,7 +35,11 @@ I got the 3D print to work, which was a crucial part of my goal, to ensure that 
 The breadboard will connect the LEDs and the color sensors, which will be supplied with power from an Arduino Uno. So far I have gotten the code to work, which is: if an object is held to the sensor, it takes the greatest RGB value and the corresponding light turns on. I will add more lights, which makes it more difficult and will 3D print a casing. My plan is to finish the software, then move onto a 3D print, and assembling everything. 
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+<img width="1448" height="1204" alt="Screenshot 2026-07-24 163242" src="https://github.com/user-attachments/assets/ab12bbae-8aba-4994-84e7-3a27a9bd8e4d" />
+<img width="1614" height="1138" alt="Screenshot 2026-07-24 134407" src="https://github.com/user-attachments/assets/d56ce55b-9d93-4995-995f-59ae008c9ede" />
+
+<img width="1694" height="1054" alt="Screenshot 2026-07-27 132413" src="https://github.com/user-attachments/assets/46eea78e-dc3b-4d0c-be78-5a3936d9e9fe" />
+
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
