@@ -30,7 +30,7 @@ I got the 3D print to work, which was a crucial part of my goal, to ensure that 
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=GoMx1A4RzwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The breadboard will connect the LEDs and the color sensors, which will be supplied with power from an Arduino Uno. So far I have gotten the code to work, which is: if an object is held to the sensor, it takes the greatest RGB value and the corresponding light turns on. I will add more lights, which makes it more difficult and will 3D print a casing. My plan is to finish the software, then move onto a 3D print, and assembling everything. 
 
