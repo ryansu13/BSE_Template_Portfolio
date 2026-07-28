@@ -13,7 +13,7 @@ My final milestone was to get the wires and breadboards so that they could fit n
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- I learned how to code in Arduino-code and learned how to wire up LEDS.
+- I learned how to code in Arduino-code and learned how to wire up LEDS.0
 - I hope to learn about the insides of the Arduino Uno and the software code. 
 
 
