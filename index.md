@@ -1,10 +1,9 @@
 Chameleon Light
 
 A light that imitates nature. The chameleon light take the greatest RGB value of the object held to its color sensor and the corresponding LED flashes that color. 
-| Stratford Preparatory | EE | 8th |
-| Ryan S | Stratford Preparatory | Electrical Engineering | Eight grader
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+| **Name** | **School** | **Area of Interest** | **Grade** |
+| Ryan S | Stratford Preparatory | Electrical Engineering | Eight grader
 
 ![Headstone Image](logo.svg)
 
