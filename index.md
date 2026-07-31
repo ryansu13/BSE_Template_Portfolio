@@ -1,9 +1,10 @@
-Chameleon Light
+# Chameleon Light
 
 A light that imitates nature. The chameleon light take the greatest RGB value of the object held to its color sensor and the corresponding LED flashes that color. 
 
 | **Name** | **School** | **Area of Interest** | **Grade** |
-| Ryan S | Stratford Preparatory | Electrical Engineering | Eight grader
+|:--:|:--:|:--:|:--:|
+| Ryan S | Stratford Preparatory | Electrical Engineering | Eight grader |
 
 ![Headstone Image](logo.svg)
 
@@ -190,6 +191,7 @@ void loop() {
 Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
 | Arduino UNO | It acts like the motherboard to my project | $5 | <a href="https://store-usa.arduino.cc/collections/uno"> Link </a> |
 | Color Sensor | Sensing color | $9 | <a href="https://www.amazon.com/arduino-color-sensor/s?k=arduino+color+sensor"> Link </a> |
 | RGB LED | Shows color | $5 | <a href="https://www.digikey.com/en/products/detail/adafruit-industries-llc/4203/10130502"> Link </a> |
